@@ -15,9 +15,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html")
 })
 
-app.post("/word", async (req, res) => {
+app.post("/word", (req, res) => {
   const word = req.body.word.trim().toLowerCase()
-  await open("http://wisdomlib.org/definition/" + word + "#sanskrit")
+  open("http://wisdomlib.org/definition/" + word + "#sanskrit")
 })
 
 const listener = app.listen(3000, () => {
