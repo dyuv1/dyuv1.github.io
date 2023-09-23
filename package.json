@@ -8,6 +8,7 @@
 		"start": "node index.js"
 	},
 	"dependencies": {
+		"execa": "^8.0.1",
 		"express": "^4.16.4",
 		"open": "^9.1.0"
 	},
